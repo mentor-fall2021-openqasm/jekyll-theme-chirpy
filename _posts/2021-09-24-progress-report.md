@@ -29,3 +29,24 @@ Progress report and discussion summary for OpenQASM 3.0 Reference Implementaion 
 * Vishal presenting IEEE Quantum Week. Slides for that may be used for Oct. 7 QAMP checkpoint.
 * Any shortfalls in the reference AST from the AWS team should continue to be noted or PR’ed, whatever appropriate.
 * Implementation of gate definitions with names.
+
+# Notes from Conversation with Dr. Bello
+We had a problem with implementing unfolding loops of the form:
+```
+OPENQASM 3;
+include "stdgates.inc";
+
+const n = 10;
+qubit q;
+angle[n] c = 0;
+
+for i in [0: n - 1] { 
+  phase(c) q[0];
+  measure q -> c[i];
+  c <<= 1;
+}
+```
+Abeer Vaishnav met with Dr. Bello by WebEx. The summary:
+* Qiskit does not support shift instructions. They are trivial to add, kind like an opaque inst. But those things that consume qiskit objects do not know about it.
+* Getting a random QASM file and trying to express that in Qiskit is hard. Probably better to get an algorithm in Qiskit, write the QASM for it, and use that last QASM as the example.
+* Unfolding loops is not always possible.
