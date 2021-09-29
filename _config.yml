@@ -33,9 +33,6 @@ url: 'https://github.com/mentor-fall2021-openqasm/openqasm3_reference_implementa
 github:
   username: mentor-fall2021-openqasm             # change to your github username
 
-twitter:
-  username: open-qasm-3.0            # change to your twitter username
-
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
@@ -46,13 +43,10 @@ social:
     - https://github.com/mentor-fall2021-openqasm/openqasm3_reference_implementation     # change to your twitter homepage
            # change to your github homepage
     # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
 
 google_site_verification: google_meta_tag_verification # change to your verification string
 
 # ↑ --------------------------
-
 
 google_analytics:
   id: ''              # fill in your Google Analytics ID

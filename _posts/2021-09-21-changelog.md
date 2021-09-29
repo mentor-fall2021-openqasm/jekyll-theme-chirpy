@@ -55,7 +55,8 @@ tags: [updates,'initial']     # TAG names should always be lowercase
         * **get_Concatenation =**  computes concatenated list of passed arrays w.r.t context. Checks if the returned identifier lookup is a list and casts it to a list if needed.
 >  6. **source/openqasm/src/openqasm/translator/modifiers.py -**  Defines apply_modifier to apply  appropriate modifier to quantum gate. Supports inv, pow and ctrl. .negctrl type also supported as of [2c5bc5]. Also compute_expression for number of ctrl and power as per context.  
 >   
->  7. **source/openqasm/src/openqasm/translator/translator.py -**  Translator to convert OpenQASM 3.0 into a qiskit QuantumCircuit instance
+>  7. **source/openqasm/src/openqasm/translator/translator.py -**  Translator to convert OpenQASM 3.0 into a qiskit QuantumCircuit instance  
+**Methods:**
         * **translate =** Translates given ast to a qiskit QuantumCircuit instance. Declares a QuantumCircuit and context object and passes on each ast statement to _process_Statement for further breaking it down and retrieves the resulting processed qiskit QuantumCircuit object and returns the same.
         * **_process_statement =** Extracts each statement type, name and formats function name as per its relevant function name to be passed on to for relevant processing. The relevant processing_function_name is passed on with statement, circuit and context as arguments. Also checks if the function name is a supported feature and returns an UnsupportedFeature exception
         * **_supported_features =** Returns list of supported AST type names
@@ -63,6 +64,6 @@ tags: [updates,'initial']     # TAG names should always be lowercase
         * **_process_ConstantDeclaration =** Process ConstantDeclaration node in AST. Checks current statement node and either declares it as None if uninitialised or adds it to _symbol dict in context
         * **_process_ClassicalDeclaration =** Processes ClassicalDeclaration node in AST if supported. Initializes expression to none or adds it to _symbol dict.
         * **_process_QuantumReset =** Processes QuantumReset node and applies reset operation to the given qubit in context
-        * **_process_QuantumGate = **Processes QuantumGate node in AST. Appends relevant gate operation to the qubit in context. Applies the relevant gate modifier from modifiers.py if applicable
+        * **_process_QuantumGate =** Processes QuantumGate node in AST. Appends relevant gate operation to the qubit in context. Applies the relevant gate modifier from modifiers.py if applicable
         * **_process_QuantumGateDefinition =** Processes custom parameterized gates as specified in QuantumGateDefinition from ast. Returns an equivalent custom gate to the input definition.
         * **_process_QuantumPhase =** Processes a custom phase input to a gate upto a global phase. Appends the equivalent phased_gate to the circuit object declared in translate method
