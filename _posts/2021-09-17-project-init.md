@@ -19,7 +19,7 @@ This post marks the official beginning of the project "OpenQASM 3.0 Reference Im
 	c. Be ready to present to Mentorship program (9/21)
 5. Team to coordinate roles
 	*  a. QC gen - Abeer & Adrien
-	* b. Coord with `astcompiler` on AST compiler - Adrien & Abeer
+	* b. Coord with `@aspcompiler` on AST compiler - Adrien & Abeer
 	* c. Documentation - Vishal
 		*  a. README.md
 		*  b. Presentations
