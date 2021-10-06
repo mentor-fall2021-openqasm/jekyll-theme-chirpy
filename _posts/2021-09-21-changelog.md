@@ -15,7 +15,7 @@ tags: [updates,'initial']     # TAG names should always be lowercase
 ## Update notes
 - **Added** MakeFile's to source/openqasm and source/grammer to compile and build grammer from qasm3.g4
 - **Updated** setup.cfgs with pylint and black support
-- Files created on September 21 Update:  <br />
+- Update log <br />
 >  1. **source/openqasm/tests/build_ast.py -**  Test parser for validating statement numbers, OpenQASM version and ForLoop Listing for example adder.qasm in openqasm/examples    
 >   
 >  2. **source/openqasm/src/openqasm/translator/context.py -** Stores a parseable context in a dict-like structure.
