@@ -5,7 +5,7 @@ categories: [Updates, "Checkpoint"]
 tags: [updates,checkpoint]     # TAG names should always be lowercase
 ---
 
-# Summary Since October 7 Checkpoint #1  
+# Summary since October 7 Checkpoint #1  
 
 ### Progress Summary
 
@@ -31,4 +31,4 @@ The version 1 of the implementation showcased on October 7 - Checkpoint #1 now h
 - Take opinions and hints from openpulse invested parties in the discussion in Issue #296 while creating it along. Have received guidance support from openpulse closed group
 
 # Checkpoint \#2 Document <br>  
-<object data="/assets/pdf/QAMPCheckpoint2.pdf" width="800" height="980" type='application/pdf'></object>
+<object data="/assets/pdf/QAMPCheckpoint2.pdf" width="800" height="1000" type='application/pdf'></object>
