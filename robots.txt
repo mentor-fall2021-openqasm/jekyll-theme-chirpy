@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow: /norobots/
+
+Sitemap: https://github.com/mentor-fall2021-openqasm/openqasm3_reference_implementation/sitemap.xml
